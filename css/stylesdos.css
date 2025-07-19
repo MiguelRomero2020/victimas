@@ -239,6 +239,7 @@ nav ul li a:hover {
 
 /* boton abajo y arriba */
  /* Contenedor de botones de scroll */
+/*
         .scroll-buttons {
             position: fixed;
             right: 8px;
@@ -251,7 +252,7 @@ nav ul li a:hover {
         }
 
         /* Estilos base para botones */
-        .scroll-btn {
+ /*       .scroll-btn {
             width: 45px;
             height: 45px;
             border: none;
@@ -273,7 +274,7 @@ nav ul li a:hover {
         }
 
         /* Efecto de fondo animado */
-        .scroll-btn::before {
+    /*    .scroll-btn::before {
             content: '';
             position: absolute;
             top: 0;
@@ -293,7 +294,7 @@ nav ul li a:hover {
         }
 
         /* Estados hover y active */
-        .scroll-btn:hover {
+     /*   .scroll-btn:hover {
             background: rgba(255, 255, 255, 0.25);
             border-color: rgba(255, 255, 255, 0.4);
             transform: scale(1.1) translateY(-2px);
@@ -306,7 +307,7 @@ nav ul li a:hover {
         }
 
         /* Botón específico ir arriba */
-        .scroll-up {
+     /*   .scroll-up {
             opacity: 0;
             visibility: hidden;
             transform: translateY(20px);
@@ -324,7 +325,7 @@ nav ul li a:hover {
         }
 
         /* Botón específico ir abajo */
-        .scroll-down {
+    /*    .scroll-down {
             opacity: 1;
             visibility: visible;
         }
@@ -341,7 +342,7 @@ nav ul li a:hover {
         }
 
         /* Indicador de progreso */
-        .progress-ring {
+     /*   .progress-ring {
             position: absolute;
             top: -2px;
             left: -2px;
@@ -357,7 +358,7 @@ nav ul li a:hover {
         }
 
         /* Iconos SVG */
-        .scroll-btn svg {
+    /*    .scroll-btn svg {
             width: 20px;
             height: 20px;
             fill: currentColor;
@@ -369,7 +370,7 @@ nav ul li a:hover {
         }
 
         /* Animación de pulsación */
-        .scroll-btn.pulse {
+    /*    .scroll-btn.pulse {
             animation: pulse 0.6s ease-out;
         }
 
@@ -389,7 +390,7 @@ nav ul li a:hover {
         }
 
         /* Tooltip */
-        .scroll-btn::after {
+  /*      .scroll-btn::after {
             content: attr(data-tooltip);
             position: absolute;
             right: 70px;
@@ -414,7 +415,7 @@ nav ul li a:hover {
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+  /*      @media (max-width: 768px) {
             .scroll-buttons {
                 right: 20px;
                 gap: 12px;
@@ -462,13 +463,13 @@ nav ul li a:hover {
         }
 
         /* Efectos adicionales */
-        .scroll-btn:focus {
+     /*   .scroll-btn:focus {
             outline: none;
             box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
         }
 
         /* Animación de entrada */
-        .scroll-buttons {
+  /*      .scroll-buttons {
             animation: slideInRight 0.8s ease-out 0.5s both;
         }
 
@@ -482,7 +483,7 @@ nav ul li a:hover {
                 transform: translateX(0) translateY(-50%);
             }
         }
-
+*/
 
  /* barra social*/
 
