@@ -196,7 +196,7 @@ nav ul li a:hover {
   margin-right: 8px;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
   nav.desk {
     display: none;
   }
