@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <title>Progresismo Caldas</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/jpg"  />
+  <link rel="stylesheet" href="css/stylescinco.css">
+  <!--Iconos-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/css/fontello-embedded.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <!--bootrap modelo-->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+  </script>
+
+	<!-- bxSlider Javascript file -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.min.1.11.2.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+<style type="text/css">
+
+  #bx-pager {
+	  width: 100%;
+	  height: auto;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  #bx-pager a {
+    margin: 0 3px;
+	  
+  }
+
+  #bx-pager a img {
+	    width: 100%;
+	  height: auto;
+	  max-width: 80px;
+    padding: 3px;
+    border: solid #ccc 1px
+  }
+
+  #bx-pager a.active img {
+    border: solid #5280DD 1px;
+  }
+</style>
+		<script src="js/2c36e9b7b1.js"></script>
+</head>
+<body>
+  
+<div class="container">
+  <nav id="header"  class="desk">
+    <ul>
+		<li>	
+		 <a class="navbar-brand nav-link text-dark" href="index.html"><img src="img/logo.png" class="img-fluid" alt="..." width="100%" height="auto" style="max-width:80px; max-height:36px; background-repeat: no-repeat; background-size:contain; background-position: center center; margin-top: 15px;"></a></li>
+      <li><span class="bi bi-house"></span><a href="index.html">Inicio</a></li>
+      <li><span class="fa fa-users"></span><a href="quinessomos.html">Quiénes Somos</a></li>
+      <li><span class="bi bi-map"></span><a href="nuestroterritorio.html">Nuestro Territorio</a></li>
+      <li><span class="bi bi-bank"></span><a href="leyesdecretos.html">Leyes y Decretos</a></li>
+	  <li class="active"><span class="bi bi-file-earmark-person"></span><a href="nuestropresidente.html">Nuestro Presidente</a></li>
+    </ul>
+  </nav>
+  
+  <nav id="headerr"  class="mob">
+	
+    <div class="hamburger-btn">
+		<a  href="index.html"> <img src="img/logo.png" class="img-fluid" alt="..." width="100%" height="auto" style="max-width:60px; max-height:60px; background-repeat: no-repeat; background-size:contain; background-position: center center; margin-top: 16px; margin-left: 70px; position: absolute;"></a>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+		<li><span class="bi bi-house"></span><a href="index.html">Inicio</a></li>
+        <li><span class="fa fa-users"></span><a href="quinessomos.html">Quiénes Somos</a></li>
+        <li><span class="bi bi-map"></span><a href="nuestroterritorio.html">Nuestro Territorio</a></li>
+        <li><span class="bi bi-bank"></span><a href="leyesdecretos.html">Leyes y Decretos</a></li>
+        <li class="active"><span class="bi bi-file-earmark-person"></span><a href="nuestropresidente.html">Nuestro Presidente</a></li>
+		<li><a href="#" class="icon-facebook-circled-1"></a>
+		<a href="#" class="icon-instagram"></a>
+		<a href="#" class=" icon-youtube-2"></a>
+		<a href="#" class="bi bi-threads"></a>
+		<a href="#" class="bi bi-twitter-x"></a>
+		</li>
+    </ul>
+  </nav>
+</div> 
+<br/><br/><br/>
+	
+		<div class="container-bar d-none d-lg-block">
+<input type="checkbox" id="btn-social">
+<label for="btn-social" class="icon">&raquo;</label>
+<div class="icon-social">
+<a href="#" class="bi bi-facebook">
+<span class="title">Facebook</span>
+</a>
+<a href="#" class="bi bi-youtube">
+<span class="title">Youtube</span>
+</a>
+<a href="#" class="bi bi-twitter-x">
+<span class="title">X</span>
+</a>
+<a href="#" class="bi bi-threads">
+<span class="title">Threads</span>
+</a>
+<a href="#" class="bi bi-instagram">
+<span class="title">Instagram</span>
+</a>
+</div>
+</div>
+
+<div id="container_1" class="container-fluid">
+<ul class="bxslider">
+   <li><img src="img/1.jpg" class="img-fluid"/></li>
+  <li><img src="img/2.jpg" class="img-fluid"/></li>
+  <li><img src="img/3.png" class="img-fluid"/></li>
+  <li><img src="img/4.png" class="img-fluid" /></li>
+  <li><img src="img/33.jpg" class="img-fluid" /></li>
+  <li><img src="img/34.jpg" class="img-fluid" /></li>
+  <li><img src="img/35.jpg" class="img-fluid" /></li>
+  <li><img src="img/32.jpg" class="img-fluid" /></li>
+</ul>
+	</div>
+<script>
+$('#container_1 .bxslider').bxSlider({
+  auto: true,
+  autoControls: true
+});
+</script>
+	
+	
+	<button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+		
+	<script src="js/main.js"></script>
+	
+	
+		<div class="custom-hr" aria-label="Separador con imagen en medio">
+  <div class="line left"></div>
+  <img src="img/logo.png" alt="Icono en medio" />
+  <div class="line right"></div>
+	</div>
+
+	<div class="medio center text-center">Nuestro Presidente</div>
+<br/><br/>
+	
+	
+<br/><br/>
+	<div id="container_2" class="container">
+		<div class="row">
+		 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+	<ul class="bxslider">
+  <li><img src="img/29.jpg" style="width: 100%; height: auto; min-height: 450px; min-width: 450px;"></li>
+  <li><img src="img/30.jpg" style="width: 100%; height: auto; min-height: 450px; min-width: 450px;"></li>
+  <li><img src="img/31.jpg" style="width: 100%; height: auto; min-height: 450px; min-width: 450px;"></li>
+</ul>
+
+<div id="bx-pager">
+  <a data-slide-index="0" href=""><img src="img/29.jpg" /></a>
+  <a data-slide-index="1" href=""><img src="img/30.jpg" /></a>
+  <a data-slide-index="2" href=""><img src="img/31.jpg" /></a>
+</div>
+</div>
+		
+		<div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">		
+		<br/>
+			<div class="medio center text-center">Gustavo Francisco Petro Urrego </div>
+		<p style="text-align: justify;">Gustavo Francisco Petro Urrego es un político y economista colombiano, actual presidente de Colombia desde el 7 de agosto de 2022. Aquí te presento un resumen de su biografía:
+			<br/>
+<b>Nacimiento y educación</b>
+			<br/>
+Nació el 19 de abril de 1960 en Ciénaga de Oro, Córdoba, Colombia.
+Estudió Economía en la Universidad Externado de Colombia y tiene una maestría en Economía en la Universidad de Salamanca, España.
+			<br/>
+<b>Trayectoria política</b>
+			<br/>
+Inició su carrera política en el movimiento guerrillero M-19, del cual fue miembro activo durante varios años.
+Después de dejar las armas, se convirtió en asesor del gobierno de Bogotá y luego en concejal de la ciudad.
+			<br/>
+M-19 y desmovilización: En su juventud, Petro militó en el Movimiento 19 de abril (M-19), una guerrilla urbana activa entre 1974 y 1990. Tras la desmovilización del grupo en 1990, Petro se integró a la política legal y fue elegido miembro de la Cámara de Representantes en 1991.
+
+<br/>
+Embajada en Bélgica: Entre 1994 y 1996, Petro se desempeñó como agregado diplomático para los Derechos Humanos en la embajada de Colombia en Bélgica.
+		<br/>
+En 2006, fue elegido senador de la República por el partido Polo Democrático Alternativo (PDA).
+			<br/>
+En 2010, se postuló como candidato a la presidencia de Colombia por el PDA, quedando en segundo lugar.
+			<br/>
+En 2011, fue elegido alcalde de Bogotá por el movimiento Progresistas, cargo que ocupó hasta 2014.
+<br/>
+En 2018, se postuló nuevamente como candidato a la presidencia de Colombia por la coalición Colombia Humana, quedando en segundo lugar.
+<br/>
+En 2022, ganó las elecciones presidenciales en segunda vuelta, convirtiéndose en el primer presidente de izquierda en la historia de Colombia.
+	<br/>
+<b>Propuestas y políticas</b>
+<br/>
+Petro se ha destacado por sus propuestas progresistas y de izquierda, como la implementación de una economía basada en la sostenibilidad ambiental y social, la reforma laboral y la protección de los derechos humanos.
+			<br/>
+Durante su mandato como alcalde de Bogotá, implementó políticas de movilidad y transporte público, como el sistema de transporte TransMilenio.
+			<br/>
+Vida personal
+			<br/>
+<b>Está casado con Verónica Alcocer y tiene seis hijos.</b>
+			<br/>
+En resumen, Gustavo Petro es un político y economista colombiano con una trayectoria marcada por su compromiso con la justicia social y la sostenibilidad ambiental. Su elección como presidente de Colombia en 2022 marcó un hito en la historia política del país.</p>
+
+	
+			</div>
+		</div>
+		</div>	
+	<script> $('#container_2 .bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+			pagerCustom: '#bx-pager'
+			
+  });
+	</script>
+	
+	
+		
+	<br/>
+	
+    <div class="container">
+        <h1 class="main-title medio center text-center">Trayectoria Política </h1>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Años 80</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Concejal</h3>
+                    <p class="timeline-description">
+                Gustavo Petro fue personero en 1981 y concejal de Zipaquirá en 1984 y 1986. Estas fueron las primeras posiciones políticas que ocupó.
+                    </p>
+                    <span class="timeline-badge">Inicios de la Profesión Política</span>
+                    
+                </div>
+				
+        <img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(180%, -50%);"/>
+
+
+				
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Años 90 inicios de los 2000</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Representante a la Cámara </h3>
+                    <p class="timeline-description">
+                       Representante a la Cámara (1991-1994 y 1998-2002). Fue elegido Representante a la Cámara en dos periodos. En este rol, se destacó por sus debates de control político y sus denuncias.
+                    </p>
+                    <span class="timeline-badge">Sirvió como agregado diplomático para los Derechos Humanos en la embajada de Colombia en Bélgica, tras recibir amenazas por su activismo.</span>
+                   
+                </div>
+				
+				
+				  <img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -50%);"/>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Años 2006-2010 y 2018-2022</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Senador de la República</h3>
+                    <p class="timeline-description">
+                      Petro fue elegido senador por el Polo Democrático Alternativo (PDA), logrando la tercera votación más alta del país. Durante este período, destacó por destapar el escándalo de la parapolítica, revelando nexos entre políticos y grupos paramilitares, lo que resultó en la condena de más de 60 excongresistas.
+                    </p>
+                    <span class="timeline-badge"> Fue clave en la exposición de escándalos durante el gobierno de Álvaro Uribe, incluyendo los vínculos entre políticos y paramilitares y violaciones de derechos humanos por parte de las Fuerzas Militares.</span>
+                   
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Años 2012-2015</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Alcalde de Bogotá</h3>
+                    <p class="timeline-description">
+                       En 2011, tras salir del PDA (Polo Democrático Alternativo) y fundar el Movimiento Progresistas, Petro fue elegido alcalde de Bogotá. Su programa, Bogotá Humana, se enfocó en reducir la pobreza, proteger el medio ambiente y combatir la corrupción estructural.
+						<br/>
+						Logros destacados incluyen:
+						<br/>
+Reducción de la pobreza multidimensional para casi medio millón de personas (DANE).
+						<br/>
+Implementación del mínimo vital gratuito de agua potable para estratos 1 y 2.
+						<br/>
+Creación de la Secretaría de la Mujer y la Línea Púrpura para atender casos de violencia de género.
+						<br/>
+Disminución de la mortalidad infantil y la tasa de homicidios a mínimos históricos.
+						<br/>
+Creación de 417 jardines infantiles distritales y programas de salud preventiva en barrios pobres.
+                    </p>
+                    <span class="timeline-badge"> En 2013, fue destituido e inhabilitado por 15 años por el procurador Alejandro Ordóñez debido a irregularidades en la implementación de un nuevo modelo de recolección de basuras. Esta decisión fue revertida, pero marcó su gestión.
+					
+					<br/> (caso que luego fue revertido por la Corte Interamericana de Derechos Humanos).</span>
+                  
+                </div>
+				
+				<img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(180%, -1400%);"/>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Años 2010, 2018, 2022</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Candidaturas Presidenciales </h3>
+                    <p class="timeline-description">
+                       En 2010, Petro se postuló a la presidencia por el Polo Democrático, pero no logró suficiente apoyo.
+						<br/>
+En 2018, candidato por la Colombia Humana, quedó en segundo lugar frente a Iván Duque.
+						<br/>
+En 2022, liderando la coalición Pacto Histórico, ganó la presidencia con el 50,44% de los votos, convirtiéndose en el primer presidente de izquierda en la historia reciente de Colombia.
+                    </p>
+                    <span class="timeline-badge">Desde el 7 de agosto de 2022, Gustavo Petro ejerce como Presidente de la República. Su gobierno se ha enfocado en reformas sociales, económicas y ambientales, con propuestas como la reforma agraria y la reforma a la salud.</span>
+                   
+                </div>
+				
+				<img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -1500%);"/>
+            </div>
+			
+			
+			    <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">2022 Actualidad</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Presidente de Colombia </h3>
+                    <p class="timeline-description">
+                     Ha impulsado reformas para cambiar y mejorar: salud, laboral, pensional, agraria y reapertura de la via férrea.
+
+Su gobierno ha sido crítico de los grandes intereses económicos y busca un enfoque de "economía popular" y transición energética.
+                    </p>
+                    <span class="timeline-badge">Gustavo Petro ha sido una figura activa en la denuncia de casos de corrupción a lo largo de su carrera política. Sin embargo, también su propio gobierno a  denunciado la corrupción y haciendo lo correcto como presidente.</span>
+                  
+                </div>
+					<img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(180%, -1100%);"/>
+            </div>
+			
+			
+			
+			
+			    <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="bi bi-person-workspace"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-date">Vida Política</div>
+					<hr style="box-shadow:  linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);">
+                    <h3 class="timeline-title">Casos de corrupción que ha denunciado o ayudado a visibilizar</h3>
+                    <p class="timeline-description">
+                      Parapolítica.
+						<br/>
+						Caso de la Yidispolítica.
+							<br/>
+						Cartel de la contratación en Bogotá de los hermano moreno.
+							<br/>
+						Corrupción en la DIAN, la salud y la Fiscalía.
+						<br/>
+						"Marionetas II".
+						<br/>
+						Corrupción en la UNP (Unidad Nacional de Protección) y otras entidades.
+						<br/>
+						Despojo De Tierras.
+                    </p>
+                    <span class="timeline-badge">Pacto y Cambio por la Tierra y la Vida.</span>
+                    
+					</div>
+					<img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-300%, -1000%);"/>
+					
+            </div>
+			
+			<img src="img/logo.png" class="img-fluid float-right"  width="100" height="100" style="  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(180%, 2800%);"/>
+			
+        </div>
+		
+    </div>
+
+
+	
+	<br/><br/><br/><br/><br/><br/>
+<div class="custom-hr" aria-label="Separador con imagen en medio">
+  <div class="line left"></div>
+  <img src="img/logo.png" alt="Icono en medio" />
+  <div class="line right"></div>
+	</div>
+	
+	    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Información Institucional -->
+                    <div class="footer-section">
+                        <h3><img src="img/logo.png" class="img-fluid" style="filter: drop-shadow(-3px 4px 8px #FFFF);">Progresismo En Caldas</h3>
+                        <p>Una asociación comprometida a los cambios del pacto histórico y apoyo a las víctimas del conflcito armado y somos una comunidad, trabajando con transparencia, eficiencia y responsabilidad social.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Twitter">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" title="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Threads">
+                                <i class="bi bi-threads-fill"></i>
+                            </a>
+							<a href="#" class="social-link" title="Whatsapp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servicios -->
+                    <div class="footer-section">
+                        <h3><i class="bi bi-hand-thumbs-up-fill"></i>Valores</h3>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Caldas Comprometida</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i> Atención a la Ciudadana</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Escuchar Opiniones</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Participación</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Solicitudes</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Si a Las Reformas Sociales</a>
+							</li>
+							 <img src="img/mapa.png" class="img-fluid" style="filter: drop-shadow(-3px 4px 8px #FFFF);">
+                        </ul>
+                    </div>
+
+                    <!-- Transparencia 
+                    <div class="footer-section">
+                        <h3><i class="fas fa-eye"></i> Transparencia</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-balance-scale"></i> Normatividad</a></li>
+                            <li><a href="#"><i class="fas fa-chart-bar"></i> Informes de Gestión</a></li>
+                            <li><a href="#"><i class="fas fa-dollar-sign"></i> Información Presupuestal</a></li>
+                            <li><a href="#"><i class="fas fa-users"></i> Participación Ciudadana</a></li>
+                            <li><a href="#"><i class="fas fa-gavel"></i> Contratación</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i> Control Interno</a></li>
+                        </ul>
+                    </div>-->
+
+                    <!-- Contacto -->
+                    <div class="footer-section">
+                        <h3><i class="bi bi-person-square"></i> Contacto</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="bi bi-pin-map-fill"></i>
+                                <div>
+                                    <strong>Dirección:</strong><br>
+                                    Cll:__ Crr__<br>
+                                   La Dorada-Caldas-Colombia
+									<br><br>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37785.36011582543!2d-74.6856289086854!3d5.462905585694261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40dea117e4af7f%3A0xbe7371063841215e!2sLa%20Dorada%2C%20Caldas!5e0!3m2!1ses-419!2sco!4v1748758465610!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-telephone"></i>
+                                <div>
+                                    <strong>Teléfono:</strong><br>
+                                    (+57) 123 456 7890
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-at"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    contacto@cualquierinstitucion.gov.co
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-clock-fill"></i>
+                                <div>
+                                    <strong>Horario:</strong><br>
+                                    Lun - Vie: 8:00 AM - 5:00 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-logo">
+                        <div style="width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #1e3c72; font-weight: bold; font-size: 1.2em;">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="footer-logo-text">
+                            Progresismo En Caldas
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#">Política de Privacidad</a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2025 Todos los derechos reservados.</p>
+					<p> <strong>Desarrollado por el Ingeniero De Sistemas Miguel A. Romero R.</strong></p>
+					
+					
+								<div class="reloj-container">
+        <div class="fecha" id="fecha"></div>
+        <div class="hora">
+            <span id="horas">00</span>:<span id="minutos">00</span>:<span class="segundos" id="segundos">00</span>
+        </div>
+        <div class="zona-horaria" id="zonaHoraria"></div>
+        
+    </div>
+
+    <script>
+        function actualizarRelojCompleto() {
+            const ahora = new Date();
+            
+            // Configurar para zona horaria de Colombia
+            const opcionesFecha = {
+                timeZone: 'America/Bogota',
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            
+            const opcionesHora = {
+                timeZone: 'America/Bogota',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            
+            // Actualizar fecha
+            const fechaFormateada = ahora.toLocaleDateString('es-CO', opcionesFecha);
+            document.getElementById('fecha').textContent = fechaFormateada.charAt(0).toUpperCase() + fechaFormateada.slice(1);
+            
+            // Actualizar hora
+            const horaCompleta = ahora.toLocaleTimeString('es-CO', opcionesHora);
+            const partesHora = horaCompleta.split(':');
+            
+            document.getElementById('horas').textContent = partesHora[0];
+            document.getElementById('minutos').textContent = partesHora[1];
+            document.getElementById('segundos').textContent = partesHora[2];
+            
+            // Zona horaria
+            document.getElementById('zonaHoraria').textContent = 'Bogotá, Colombia (COT)';
+            
+            // Reloj compacto
+            const fechaHoraCompacta = ahora.toLocaleString('es-CO', {
+                timeZone: 'America/Bogota',
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            });
+            document.getElementById('relojCompacto').textContent = fechaHoraCompacta;
+        }
+
+        // Actualizar cada segundo
+        setInterval(actualizarRelojCompleto, 1000);
+        
+        // Ejecutar inmediatamente
+        actualizarRelojCompleto();
+    </script>
+				
+                </div>
+            </div>
+        </div>
+    </footer>
+
+	
+    <!-- Botones de navegación -->
+    <div class="scroll-buttons">
+        <button class="scroll-btn scroll-up" data-tooltip="Ir arriba" aria-label="Ir arriba">
+            <div class="progress-ring"></div>
+            <svg viewBox="0 0 24 24">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+            </svg>
+        </button>
+        
+        <button class="scroll-btn scroll-down" data-tooltip="Ir abajo" aria-label="Ir abajo">
+            <svg viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </button>
+    </div>
+
+	
+	    
+
+	
+    <script>
+        // Elementos del DOM
+        const scrollUpBtn = document.querySelector('.scroll-up');
+        const scrollDownBtn = document.querySelector('.scroll-down');
+        const progressRing = document.querySelector('.progress-ring');
+        const sections = document.querySelectorAll('.section');
+
+        // Variables de control
+        let isScrolling = false;
+        let scrollTimeout;
+
+        // Función para scroll suave
+        function smoothScrollTo(target, duration = 800) {
+            const start = window.pageYOffset;
+            const distance = target - start;
+            const startTime = performance.now();
+
+            function animation(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Función de easing suave
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                
+                window.scrollTo(0, start + distance * easeOutCubic);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animation);
+                } else {
+                    isScrolling = false;
+                }
+            }
+            
+            isScrolling = true;
+            requestAnimationFrame(animation);
+        }
+
+        // Función ir arriba
+        function scrollToTop() {
+            if (!isScrolling) {
+                scrollUpBtn.classList.add('pulse');
+                smoothScrollTo(0);
+                
+                setTimeout(() => {
+                    scrollUpBtn.classList.remove('pulse');
+                }, 600);
+            }
+        }
+
+        // Función ir abajo
+        function scrollToBottom() {
+            if (!isScrolling) {
+                scrollDownBtn.classList.add('pulse');
+                const documentHeight = document.documentElement.scrollHeight;
+                const windowHeight = window.innerHeight;
+                smoothScrollTo(documentHeight - windowHeight);
+                
+                setTimeout(() => {
+                    scrollDownBtn.classList.remove('pulse');
+                }, 600);
+            }
+        }
+
+        // Función para ir a la siguiente sección
+        function scrollToNextSection() {
+            const currentScroll = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            
+            for (let i = 0; i < sections.length; i++) {
+                const sectionTop = sections[i].offsetTop;
+                
+                if (sectionTop > currentScroll + 50) {
+                    smoothScrollTo(sectionTop);
+                    return;
+                }
+            }
+            
+            // Si no hay más secciones, ir abajo del todo
+            scrollToBottom();
+        }
+
+        // Actualizar visibilidad de botones
+        function updateButtonVisibility() {
+            const scrollTop = window.pageYOffset;
+            const documentHeight = document.documentElement.scrollHeight;
+            const windowHeight = window.innerHeight;
+            const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+            // Actualizar progreso circular
+            if (progressRing) {
+                progressRing.style.setProperty('--progress', `${scrollPercent * 3.6}deg`);
+            }
+
+            // Mostrar botón arriba después de 300px
+            if (scrollTop > 300) {
+                scrollUpBtn.classList.add('visible');
+            } else {
+                scrollUpBtn.classList.remove('visible');
+            }
+
+            // Ocultar botón abajo cerca del final
+            if (scrollTop >= documentHeight - windowHeight - 100) {
+                scrollDownBtn.classList.add('hidden');
+            } else {
+                scrollDownBtn.classList.remove('hidden');
+            }
+        }
+
+        // Event listeners
+        scrollUpBtn.addEventListener('click', scrollToTop);
+        scrollDownBtn.addEventListener('click', scrollToNextSection);
+
+        // Optimizar scroll con throttling
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Listener de scroll optimizado
+        window.addEventListener('scroll', throttle(updateButtonVisibility, 16));
+
+        // Atajos de teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Home' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToTop();
+            } else if (e.key === 'End' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToBottom();
+            } else if (e.key === 'ArrowUp' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToTop();
+            } else if (e.key === 'ArrowDown' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToNextSection();
+            }
+        });
+
+        // Inicializar
+        updateButtonVisibility();
+
+        // Soporte para gestos táctiles en móvil
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        document.addEventListener('touchstart', e => {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+
+        document.addEventListener('touchend', e => {
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartY - touchEndY;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe up - próxima sección
+                    scrollToNextSection();
+                } else {
+                    // Swipe down - sección anterior o arriba
+                    scrollToTop();
+                }
+            }
+        }
+
+        // Observador de intersección para efectos adicionales
+		
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -20% 0px'
+        };
+		
+		
+		
+		  const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                    
+                    // Animación escalonada para elementos múltiples
+                    const badges = entry.target.querySelectorAll('.timeline-badge');
+                    badges.forEach((badge, index) => {
+                        setTimeout(() => {
+                            badge.style.animation = `fadeInUp 0.6s ease forwards`;
+                            badge.style.animationDelay = `${index * 0.1}s`;
+                        }, 300);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observar todos los elementos del timeline
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            observer.observe(item);
+        });
+		
+		
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar todas las secciones
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Prevenir comportamiento por defecto en algunos navegadores
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
+	
+	
+	
+	
+<!--  jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.esm.min.js"></script>
+    <script src="js/bootstrap.min.4.3.1.js"></script>
+    <!--<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-latest.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+   <!-- <script src="js/bootstrap-4.3.1.js"></script>-->
+    <script src="js/bootstrap.bundle.min.js"></script>	
+	<!--<script src="js/index.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+	
+	<!--<script src="httpwicky.nillia.msheadroom.js/headroom.min.js"></script>-->
+<script src="js/headroom.min.js"></script>
+	  <script src="js/menu.js"></script>
+
+      <script src='https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js'></script><script  src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Progresismo Caldas</title>
+  <link rel="shortcut icon" href="img/logo.png" type="image/jpg"  />
+  <link rel="stylesheet" href="css/styles.css">
+  <!--Iconos-->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/css/fontello-embedded.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  <link href="css/bootstrap-icons.min.css" rel="stylesheet">
+  <!--bootrap modelo-->
+  <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".hamburger-btn .fa-times").hide();
+
+    $(".hamburger-btn .fa-bars").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-times").show();
+      $(".mob ul").addClass("active");
+    });
+
+    $(".hamburger-btn .fa-times").click(function(){
+      $(this).hide();
+      $(".hamburger-btn .fa-bars").show();
+      $(".mob ul").removeClass("active");
+    });
+    });
+  </script>
+
+	<!-- bxSlider Javascript file -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="js/jquery.min.1.11.2.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<!-- bxSlider CSS file -->
+<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<script src="js/2c36e9b7b1.js"></script>
+	<style>
+       </style>
+</head>
+<body>
+	
+<div  class="container">
+  <nav   id="header" class="desk">
+    <ul>
+		<li>	
+		 <a class="navbar-brand nav-link text-dark" href="index.html"><img src="img/logo.png" class="img-fluid" alt="..." width="100%" height="auto" style="max-width:80px; max-height:36px; background-repeat: no-repeat; background-size:contain; background-position: center center; margin-top: 15px;"></a></li>
+      <li class="active"><span class="bi bi-house"></span><a href="index.html">Inicio</a></li>
+      <li><span class="fa fa-users"></span><a href="quinessomos.html">Quiénes Somos</a></li>
+      <li><span class="bi bi-map"></span><a href="nuestroterritorio.html">Nuestro Territorio</a></li>
+      <li><span class="bi bi-bank"></span><a href="leyesdecretos.html">Leyes y Decretos</a></li>
+	  <li><span class="bi bi-file-earmark-person"></span><a href="nuestropresidente.html">Nuestro Presidente</a></li>
+    </ul>
+  </nav>
+  
+  <nav  id="headerr"  class="mob">
+    <div class="hamburger-btn">
+		<a  href="index.html"> <img src="img/logo.png" class="img-fluid" alt="..." width="100%" height="auto" style="max-width:60px; max-height:60px; background-repeat: no-repeat; background-size:contain; background-position: center center; margin-top: 16px; margin-left: 70px; position: absolute;"></a>
+        <i class="fa fa-bars" aria-hidden="true"></i>
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+
+    <ul>
+		<li class="active"><span class="bi bi-house"></span><a href="index.html">Inicio</a></li>
+        <li><span class="fa fa-users"></span><a href="quinessomos.html">Quiénes Somos</a></li>
+        <li><span class="bi bi-map"></span><a href="nuestroterritorio.html">Nuestro Territorio</a></li>
+        <li><span class="bi bi-bank"></span><a href="leyesdecretos.html">Leyes y Decretos</a></li>
+        <li><span class="bi bi-file-earmark-person"></span><a href="nuestropresidente.html">Nuestro Presidente</a></li>
+		<li><a href="#" class="icon-facebook-circled-1"></a>
+		<a href="#" class="icon-instagram"></a>
+		<a href="#" class=" icon-youtube-2"></a>
+		<a href="#" class="bi bi-threads"></a>
+		<a href="#" class="bi bi-twitter-x"></a>
+		</li>
+    </ul>
+  </nav>
+</div> 
+<br/><br/><br/>
+
+	
+		<div class="container-bar d-none d-lg-block">
+<input type="checkbox" id="btn-social">
+<label for="btn-social" class="icon">&raquo;</label>
+<div class="icon-social">
+<a href="#" class="bi bi-facebook">
+<span class="title">Facebook</span>
+</a>
+<a href="#" class="bi bi-youtube">
+<span class="title">Youtube</span>
+</a>
+<a href="#" class="bi bi-twitter-x">
+<span class="title">X</span>
+</a>
+<a href="#" class="bi bi-threads">
+<span class="title">Threads</span>
+</a>
+<a href="#" class="bi bi-instagram">
+<span class="title">Instagram</span>
+</a>
+</div>
+</div>
+
+<div id="container_1" class="container-fluid">
+<ul class="bxslider">
+	  <li><img src="img/1.jpg" class="img-fluid"/></li>
+  <li><img src="img/2.jpg" class="img-fluid"/></li>
+  <li><img src="img/3.png" class="img-fluid"/></li>
+  <li><img src="img/4.png" class="img-fluid" /></li>
+  <li><img src="img/33.jpg" class="img-fluid" /></li>
+  <li><img src="img/34.jpg" class="img-fluid" /></li>
+  <li><img src="img/35.jpg" class="img-fluid" /></li>
+  <li><img src="img/32.jpg" class="img-fluid" /></li>
+</ul>
+	</div>
+<script>
+$('#container_1 .bxslider').bxSlider({
+  auto: true,
+  autoControls: true
+});
+</script>
+	
+	
+	<button class="switch" id="switch">
+					<span><i class="fas fa-sun"></i></span>
+					<span><i class="fas fa-moon"></i></span>
+				</button>
+		
+	<script src="js/main.js"></script>	
+
+
+	
+		<div class="custom-hr" aria-label="Separador con imagen en medio">
+  <div class="line left"></div>
+  <img src="img/logo.png" alt="Icono en medio" />
+  <div class="line right"></div>
+	</div>
+	<div class="medio center text-center">El progresismo</div>
+	<br/>
+	
+	 <div class="container">
+		 <div class="row">
+	<div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 uno" >
+<p><img src="img/20.jpg" class="img-fluid z"/><center class="center">La Dorada-Caldas</center><br/>
+La Dorada, Caldas, al ser un municipio clave en la subregión del Magdalena Centro, comparte muchas de las dinámicas y desafíos del progresismo que se han mencionado para el Magdalena Medio en general. Su ubicación estratégica como puerto fluvial y centro de conexión ha influido en su desarrollo y, por ende, en las expresiones progresistas.
+Aquí te detallo los aspectos del progresismo en La Dorada:
+		<br/>
+		Contexto y Particularidades de La Dorada: Ubicación Estratégica: La Dorada es conocida como el "Puerto Caldense" y ha sido históricamente un nodo importante para el transporte fluvial y terrestre en el centro de Colombia. Esta característica la ha convertido en un centro de actividad económica, pero también en un punto de confluencia de diversas problemáticas sociales. Zona de Conflicto: Aunque en menor medida que otras zonas del Magdalena Medio, La Dorada también ha sido afectada por el conflicto armado, con presencia de grupos ilegales que han generado violencia y desplazamiento, lo que ha impulsado la necesidad de buscar alternativas de paz y desarrollo inclusivo. Economía: Su economía se basa en la actividad portuaria, el comercio, la ganadería y algunas actividades agrícolas. La lucha por un desarrollo económico más equitativo y sostenible es una bandera progresista importante.</p>
+
+		 </div>
+		 
+		 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 dos" >
+<p><img src="img/5.jpg" class="img-fluid z" /><center class="center">Magdalena Medio</center><br/>
+El progresismo en el Magdalena Medio se manifiesta como una corriente política que busca abordar las profundas inequidades y los desafíos históricos de una región marcada por el conflicto armado y la desigualdad. Esta zona estratégica, caracterizada por su importancia fluvial, la ganadería, la agricultura y la extracción de petróleo, ha sido tradicionalmente dominada por estructuras de poder conservadoras.
+
+El auge del progresismo en el Magdalena Medio, a menudo asociado con movimientos sociales y políticos de izquierda y centro-izquierda, se centra en impulsar agendas de justicia social, reparación a las víctimas y desarrollo sostenible. Sus principales objetivos incluyen fortalecer la participación ciudadana, promover la reforma agraria y diversificar una economía que ha dependido históricamente de actividades extractivas y monocultivos. Aunque enfrenta retos significativos por la persistencia de actores armados y la resistencia de élites tradicionales, el progresismo busca consolidar bases de apoyo popular y articularse con el gobierno nacional para implementar políticas que transformen la realidad de sus comunidades.<br/>
+Los 9 departamentos del magdalena medio: Antioquia, Bolívar, Boyacá, Caldas, Cesar, Santander, Cundinamarca, magdalena y Tolima. Su importancia radica en ser un corredor estratégico a lo largo del río Magdalena, facilitando el transporte y el comercio.<br/> </p>
+
+		 </div>
+			 
+			  <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 uno" >
+<p><img src="img/6.jpg" class="img-fluid z" /><center class="center">¿Quiénes son las víctimas?</center><br/>
+Según el Registro Único de Víctimas (RUV), somos más de 9.5 millones de personas fueron registradas como víctimas. La mayoría de ellas (alrededor de 8.5 millones) son víctimas de desplazamiento forzado, lo que significa que tuvieron que abandonar sus hogares y tierras debido a la violencia.
+Otros hechos victimizantes comunes incluyen:
+Homicidios, Desaparición forzada, Secuestro, Minas antipersonal, Reclutamiento forzado de menores, Violencia sexual, Amenazas, Confinamiento, Pérdida o despojo de bienes y tierras.</p>
+
+		 </div>
+		 
+		 </div></div>
+
+	<div class="medio center text-center">El Pacto Histórico En El Departamento De Caldas</div>
+	
+	
+	<div class="container">
+	<div class="row">
+		 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12" >
+			 
+			  <section>
+    <img src="img/7.jpg"  class="img"/>
+    <img src="img/17.jpg"  class="img" />
+    <img src="img/18.jpg" class="img"/>
+    <img src="img/19.jpg" class="img"/>
+  </section>
+
+				<br/><br/>
+		</div>
+	
+		 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 uno" >
+El Pacto Histórico en el departamento de Caldas representa una alianza política que busca transformar el panorama social y económico de la región. Esta coalición, impulsada por la izquierda colombiana, ha ganado relevancia al aglutinar voces de diversas comunidades, enfocándose en la defensa de los derechos humanos, la justicia social y el acceso equitativo a recursos. En Caldas, el Pacto ha encontrado eco en las problemáticas locales, como la agricultura sostenible, la educación, la salud pública, ganadería, turismo, reforma agraria, ayuda a las victimas del conflicto armado y campesinado. Además, ha promovido la participación ciudadana y el diálogo entre diferentes sectores de la población, buscando una mayor inclusión en las decisiones políticas. A través de movilizaciones y propuestas concretas, el Pacto Histórico ha logrado conectar con las inquietudes de los caldenses, generando expectativas de cambio en las próximas elecciones y una nueva forma de gobernar, más cercana a las necesidades del pueblo y al desarrollo sostenible de la región.
+			</div>
+		</div>
+	
+	</div>
+	<br/>
+	<div class="medio center text-center">Zona Del Magdalena Medio</div>
+	<br/>
+	<div class="container-fluid">
+	<div class="row">
+<div class="container-gallery">
+    <div class="popup popup-1">
+        <img class="img-fluid" alt="Pop Up Gallety" src="img/fila1.png" />
+    </div>
+    <div class="popup popup-2">
+        <img class="img-fluid" alt="Pop Up Gallety" src="img/fila2.png" />
+    </div>
+    <div class="popup popup-3">
+        <img class="img-fluid" alt="Pop Up Gallety" src="img/fila3.png" />
+    </div>
+    <div class="popup popup-4">
+        <img class="img-fluid" alt="Pop Up Gallety" src="img/fila4.png" />
+    </div>
+    <div class="popup popup-5">
+        <img class="img-fluid" alt="Pop Up Gallety" src="img/fila5.png" />
+    </div>
+</div>
+</div>
+</div>
+
+<br/><br/>
+	<div id="container_2" class="container-fluid">
+<ul class="bxslider">
+  <li><img src="img/8.jpg"><br/><h1 class="text-center">La Pesca</h1><br/><p style="text-align: justify; font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La pesca artesanal es una actividad tradicional y de <br/>subsistencia para muchas comunidades ribereñas. <br/>El río Magdalena provee diversas especies de peces, <br/>siendo una fuente importante de alimento y,<br/> en menor medida, de ingresos.</p></li>
+  <li><img src="img/9.jpg"><br/><h1 class="text-center">La Agricultura</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La agricultura es un pilar económico importante, <br/>destacándose el cultivo de cacao, plátano, yuca, maíz <br/>y diversas frutas tropicales. Los suelos fértiles de la <br/>vega del río Magdalena son propicios para estas <br/>actividades.</p></li>
+  <li><img src="img/10.jpg"><br/><h1 class="text-center">Las Víctimas Del Conflcito Armado</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La región ha sido históricamente golpeada por el <br/>conflicto armado interno de Colombia. <br/>Muchas comunidades y su gente han sufrido <br/>desplazamientos forzados, homicidios, despojo de tierras, <br/> masacres, secuestros y otras violaciones de derechos humanos. Aún hoy, el trabajo por la reparación y la construcción de paz es una tarea fundamental en la zona para ayudar esta población vulnerable.</p></li>
+  <li><img src="img/11.jpg"><br/><h1 class="text-center">El Tren</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La región cuenta con infraestructura férrea que, junto con <br/>las vías terrestres y la navegabilidad del río Magdalena, <br/>la convierte en un nudo estratégico de transporte y <br/>conexión entre diferentes regiones del país. <br/>El tren ha sido clave para el desarrollo económico,<br/> facilitando el comercio de productos agropecuarios<br/> y otros bienes.</p></li>
+  <li><img src="img/12.jpg"><br/><h1 class="text-center">La Minería</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La minería, especialmente la ilegal, representa <br/> una amenaza ambiental significativa en el <br/>Magdalena Medio Caldense. La extracción ilícita de oro <br/>ha causado deforestación, contaminación con mercurio<br/> y alteraciones en la dinámica fluvial, afectando la <br/>faja forestal protectora y la biodiversidad local. <br/>Además, la minería ilegal está asociada a la financiación <br/>de grupos armados ilegales, lo que agrava los problemas <br/>sociales y de seguridad en la región.</p></li>
+  <li><img src="img/13.jpg"><br/><h1 class="text-center">La Fauna</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La región es hábitat de una alta diversidad de mamíferos, con registros de al menos 49 especies en áreas de bosque seco, incluyendo especies amenazadas como la nutria neotropical, el mono nocturno  y el tití cabeciblanco. Hay muchos tipos especies: Aves, Mamíferos, Reptiles, Anfibios, peces y insectos </p></li>
+  <li><img src="img/14.jpg"><br/><h1 class="text-center">La Ganadería</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">La ganadería es la principal actividad agropecuaria, <br/>destacándose la producción de carne bajo sistemas <br/>extensivos y extensivos mejorados. <br/>Recientemente, la ganadería de doble propósito <br/>(carne y leche) ha ido ganando terreno. La región es <br/>estratégica para la comercialización de carne y leche,<br/> gracias a su ubicación y vías de comunicación que <br/>la conectan con los principales mercados del país.</p></li>
+  <li><img src="img/15.jpg"><br/><h1 class="text-center">El Turismo</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">El turismo en el Magdalena Medio Caldense se encuentra <br/>en desarrollo. Los principales atractivos son el río <br/>Magdalena (para actividades náuticas y pesca deportiva),<br/> la observación de aves debido a la riqueza de su fauna, <br/>y algunos balnearios naturales. El turismo histórico y <br/>cultural relacionado con el patrimonio ferroviario <br/>también tiene potencial.</p></li>
+  <li><img src="img/16.jpg"><br/><h1 class="text-center">La Flora</h1><br/><p style="text-align: justify;  font-weight: bold; letter-spacing: -1px; word-spacing: -0.2px;">El Magdalena Medio Caldense alberga una gran diversidad de flora, con cerca de 2.000 especies de plantas vasculares, de las cuales aproximadamente el 7% son endémicas de Colombia. En la región se encuentran árboles de gran valor ecológico y económico como cabo de hacha, cedrillo, lechero, sapán, abarco, ámbar, caracolí, ceiba amarilla, caoba, sangretoro y guayacán amarillo.</p></li>
+</ul>
+</div>	
+	<script>  $('#container_2 .bxslider').bxSlider({
+    auto: true,
+    autoControls: true,
+	minSlides: 3,
+    maxSlides: 3,
+    slideWidth: 380,
+    slideMargin: 1
+  });</script>
+	
+	
+<div class="custom-hr" aria-label="Separador con imagen en medio">
+  <div class="line left"></div>
+  <img src="img/logo.png" alt="Icono en medio" />
+  <div class="line right"></div>
+	</div>
+	
+	    <!-- FOOTER INSTITUCIONAL -->
+    <footer class="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <!-- Información Institucional -->
+                    <div class="footer-section">
+                        <h3><img src="img/logo.png" class="img-fluid" style="filter: drop-shadow(-3px 4px 8px #FFFF);">Progresismo En Caldas</h3>
+                        <p>Una asociación comprometida a los cambios del pacto histórico y apoyo a las víctimas del conflcito armado y somos una comunidad, trabajando con transparencia, eficiencia y responsabilidad social.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link" title="Facebook">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Twitter">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Instagram">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" title="YouTube">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="social-link" title="Threads">
+                                <i class="bi bi-threads-fill"></i>
+                            </a>
+							<a href="#" class="social-link" title="Whatsapp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Servicios -->
+                    <div class="footer-section">
+                        <h3><i class="bi bi-hand-thumbs-up-fill"></i>Valores</h3>
+                        <ul>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Caldas Comprometida</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i> Atención a la Ciudadana</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Escuchar Opiniones</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Participación</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Solicitudes</a></li>
+                            <li><a href="#"><i class="bi bi-check-circle-fill"></i>Si a Las Reformas Sociales</a>
+							</li>
+							 <img src="img/mapa.png" class="img-fluid" style="filter: drop-shadow(-3px 4px 8px #FFFF);">
+                        </ul>
+                    </div>
+
+                    <!-- Transparencia 
+                    <div class="footer-section">
+                        <h3><i class="fas fa-eye"></i> Transparencia</h3>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-balance-scale"></i> Normatividad</a></li>
+                            <li><a href="#"><i class="fas fa-chart-bar"></i> Informes de Gestión</a></li>
+                            <li><a href="#"><i class="fas fa-dollar-sign"></i> Información Presupuestal</a></li>
+                            <li><a href="#"><i class="fas fa-users"></i> Participación Ciudadana</a></li>
+                            <li><a href="#"><i class="fas fa-gavel"></i> Contratación</a></li>
+                            <li><a href="#"><i class="fas fa-shield-alt"></i> Control Interno</a></li>
+                        </ul>
+                    </div>-->
+
+                    <!-- Contacto -->
+                    <div class="footer-section">
+                        <h3><i class="bi bi-person-square"></i> Contacto</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="bi bi-pin-map-fill"></i>
+                                <div>
+                                    <strong>Dirección:</strong><br>
+                                    Cll:__ Crr__<br>
+                                   La Dorada-Caldas-Colombia
+									<br><br>
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37785.36011582543!2d-74.6856289086854!3d5.462905585694261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40dea117e4af7f%3A0xbe7371063841215e!2sLa%20Dorada%2C%20Caldas!5e0!3m2!1ses-419!2sco!4v1748758465610!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-telephone"></i>
+                                <div>
+                                    <strong>Teléfono:</strong><br>
+                                    (+57) 123 456 7890
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-envelope-at"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    contacto@cualquierinstitucion.gov.co
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="bi bi-clock-fill"></i>
+                                <div>
+                                    <strong>Horario:</strong><br>
+                                    Lun - Vie: 8:00 AM - 5:00 PM
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-content">
+                    <div class="footer-logo">
+                        <div style="width: 50px; height: 50px; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #1e3c72; font-weight: bold; font-size: 1.2em;">
+                            <img src="img/logo.png" class="img-fluid">
+                        </div>
+                        <div class="footer-logo-text">
+                            Progresismo En Caldas
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <a href="#">Política de Privacidad</a>
+                    </div>
+                </div>
+
+                <div class="copyright">
+                    <p>&copy; 2025 Todos los derechos reservados.</p>
+					<p> <strong>Desarrollado por el Ingeniero De Sistemas Miguel A. Romero R.</strong></p>
+					
+					
+					<div class="reloj-container">
+        <div class="fecha" id="fecha"></div>
+        <div class="hora">
+            <span id="horas">00</span>:<span id="minutos">00</span>:<span class="segundos" id="segundos">00</span>
+        </div>
+        <div class="zona-horaria" id="zonaHoraria"></div>
+        
+    </div>
+
+    <script>
+        function actualizarRelojCompleto() {
+            const ahora = new Date();
+            
+            // Configurar para zona horaria de Colombia
+            const opcionesFecha = {
+                timeZone: 'America/Bogota',
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            };
+            
+            const opcionesHora = {
+                timeZone: 'America/Bogota',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            };
+            
+            // Actualizar fecha
+            const fechaFormateada = ahora.toLocaleDateString('es-CO', opcionesFecha);
+            document.getElementById('fecha').textContent = fechaFormateada.charAt(0).toUpperCase() + fechaFormateada.slice(1);
+            
+            // Actualizar hora
+            const horaCompleta = ahora.toLocaleTimeString('es-CO', opcionesHora);
+            const partesHora = horaCompleta.split(':');
+            
+            document.getElementById('horas').textContent = partesHora[0];
+            document.getElementById('minutos').textContent = partesHora[1];
+            document.getElementById('segundos').textContent = partesHora[2];
+            
+            // Zona horaria
+            document.getElementById('zonaHoraria').textContent = 'Bogotá, Colombia (COT)';
+            
+            // Reloj compacto
+            const fechaHoraCompacta = ahora.toLocaleString('es-CO', {
+                timeZone: 'America/Bogota',
+                day: '2-digit',
+                month: '2-digit',
+                year: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            });
+            document.getElementById('relojCompacto').textContent = fechaHoraCompacta;
+        }
+
+        // Actualizar cada segundo
+        setInterval(actualizarRelojCompleto, 1000);
+        
+        // Ejecutar inmediatamente
+        actualizarRelojCompleto();
+    </script>
+					
+					
+					
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Botones de navegación -->
+    <div class="scroll-buttons">
+        <button class="scroll-btn scroll-up" data-tooltip="Ir arriba" aria-label="Ir arriba">
+            <div class="progress-ring"></div>
+            <svg viewBox="0 0 24 24">
+                <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+            </svg>
+        </button>
+        
+        <button class="scroll-btn scroll-down" data-tooltip="Ir abajo" aria-label="Ir abajo">
+            <svg viewBox="0 0 24 24">
+                <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+            </svg>
+        </button>
+    </div>
+
+    <script>
+        // Elementos del DOM
+        const scrollUpBtn = document.querySelector('.scroll-up');
+        const scrollDownBtn = document.querySelector('.scroll-down');
+        const progressRing = document.querySelector('.progress-ring');
+        const sections = document.querySelectorAll('.section');
+
+        // Variables de control
+        let isScrolling = false;
+        let scrollTimeout;
+
+        // Función para scroll suave
+        function smoothScrollTo(target, duration = 800) {
+            const start = window.pageYOffset;
+            const distance = target - start;
+            const startTime = performance.now();
+
+            function animation(currentTime) {
+                const elapsed = currentTime - startTime;
+                const progress = Math.min(elapsed / duration, 1);
+                
+                // Función de easing suave
+                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
+                
+                window.scrollTo(0, start + distance * easeOutCubic);
+                
+                if (progress < 1) {
+                    requestAnimationFrame(animation);
+                } else {
+                    isScrolling = false;
+                }
+            }
+            
+            isScrolling = true;
+            requestAnimationFrame(animation);
+        }
+
+        // Función ir arriba
+        function scrollToTop() {
+            if (!isScrolling) {
+                scrollUpBtn.classList.add('pulse');
+                smoothScrollTo(0);
+                
+                setTimeout(() => {
+                    scrollUpBtn.classList.remove('pulse');
+                }, 600);
+            }
+        }
+
+        // Función ir abajo
+        function scrollToBottom() {
+            if (!isScrolling) {
+                scrollDownBtn.classList.add('pulse');
+                const documentHeight = document.documentElement.scrollHeight;
+                const windowHeight = window.innerHeight;
+                smoothScrollTo(documentHeight - windowHeight);
+                
+                setTimeout(() => {
+                    scrollDownBtn.classList.remove('pulse');
+                }, 600);
+            }
+        }
+
+        // Función para ir a la siguiente sección
+        function scrollToNextSection() {
+            const currentScroll = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            
+            for (let i = 0; i < sections.length; i++) {
+                const sectionTop = sections[i].offsetTop;
+                
+                if (sectionTop > currentScroll + 50) {
+                    smoothScrollTo(sectionTop);
+                    return;
+                }
+            }
+            
+            // Si no hay más secciones, ir abajo del todo
+            scrollToBottom();
+        }
+
+        // Actualizar visibilidad de botones
+        function updateButtonVisibility() {
+            const scrollTop = window.pageYOffset;
+            const documentHeight = document.documentElement.scrollHeight;
+            const windowHeight = window.innerHeight;
+            const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
+
+            // Actualizar progreso circular
+            if (progressRing) {
+                progressRing.style.setProperty('--progress', `${scrollPercent * 3.6}deg`);
+            }
+
+            // Mostrar botón arriba después de 300px
+            if (scrollTop > 300) {
+                scrollUpBtn.classList.add('visible');
+            } else {
+                scrollUpBtn.classList.remove('visible');
+            }
+
+            // Ocultar botón abajo cerca del final
+            if (scrollTop >= documentHeight - windowHeight - 100) {
+                scrollDownBtn.classList.add('hidden');
+            } else {
+                scrollDownBtn.classList.remove('hidden');
+            }
+        }
+
+        // Event listeners
+        scrollUpBtn.addEventListener('click', scrollToTop);
+        scrollDownBtn.addEventListener('click', scrollToNextSection);
+
+        // Optimizar scroll con throttling
+        function throttle(func, limit) {
+            let inThrottle;
+            return function() {
+                const args = arguments;
+                const context = this;
+                if (!inThrottle) {
+                    func.apply(context, args);
+                    inThrottle = true;
+                    setTimeout(() => inThrottle = false, limit);
+                }
+            }
+        }
+
+        // Listener de scroll optimizado
+        window.addEventListener('scroll', throttle(updateButtonVisibility, 16));
+
+        // Atajos de teclado
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Home' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToTop();
+            } else if (e.key === 'End' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToBottom();
+            } else if (e.key === 'ArrowUp' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToTop();
+            } else if (e.key === 'ArrowDown' && e.ctrlKey) {
+                e.preventDefault();
+                scrollToNextSection();
+            }
+        });
+
+        // Inicializar
+        updateButtonVisibility();
+
+        // Soporte para gestos táctiles en móvil
+        let touchStartY = 0;
+        let touchEndY = 0;
+
+        document.addEventListener('touchstart', e => {
+            touchStartY = e.changedTouches[0].screenY;
+        });
+
+        document.addEventListener('touchend', e => {
+            touchEndY = e.changedTouches[0].screenY;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = touchStartY - touchEndY;
+            
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    // Swipe up - próxima sección
+                    scrollToNextSection();
+                } else {
+                    // Swipe down - sección anterior o arriba
+                    scrollToTop();
+                }
+            }
+        }
+
+        // Observador de intersección para efectos adicionales
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -20% 0px'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observar todas las secciones
+        sections.forEach(section => {
+            sectionObserver.observe(section);
+        });
+
+        // Prevenir comportamiento por defecto en algunos navegadores
+        window.addEventListener('beforeunload', () => {
+            window.scrollTo(0, 0);
+        });
+    </script>
+
+
+	 <!-- Modal -->
+  <div
+    class="modal fade"
+    id="welcomeModal"
+    tabindex="-1"
+    aria-labelledby="welcomeModalLabel"
+    aria-hidden="true"
+  >
+	      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow">
+        <div class="modal-header border-0">
+		
+         <b><strong><h5 class="modal-title" id="welcomeModalLabel"><img src="img/bienvenido.png" class="img-fluid" /></h5></strong></b>
+
+          <b><strong> <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          style=" color: black; font-weight: bold; border: 2px solid black; padding: 10px 20px; cursor: pointer;"></button></strong></b>
+        </div>
+        <div class="modal-body">
+          <p><b style="text-align: center; color: black;">Gracias por visitar nuestro sitio web. ¡Esperamos que conozcas nuestras causas y luchas en el departamento de caldas y en especial a la dorada!</b></p>
+			<img src="img/logopacto.png" class="img-fluid" />
+        </div>
+        <div class="modal-footer border-0">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg rounded-pill px-4"
+            data-bs-dismiss="modal"
+          >
+            Entendido ¡Pulsa Aqui!
+          </button>
+        </div>
+      </div>
+    </div>
+</div>
+	
+	<!-- Bootstrap 5 JS Bundle w/ Popper -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var myModal = new bootstrap.Modal(document.getElementById('welcomeModal'), {
+        backdrop: 'static',
+        keyboard: false
+      });
+      myModal.show();
+    });
+  </script>
+	
+	
+	
+	
+	
+<!--  jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.esm.min.js"></script>
+    <script src="js/bootstrap.min.4.3.1.js"></script>
+    <!--<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-latest.js"></script>-->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+   <!-- <script src="js/bootstrap-4.3.1.js"></script>-->
+    <script src="js/bootstrap.bundle.min.js"></script>	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	<!--<script src="js/index.bundle.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+     <!--<script src="httpwicky.nillia.msheadroom.js/headroom.min.js"></script>-->
+<script src="js/headroom.min.js"></script>
+	  <script src="js/menu.js"></script>
+
+
+      <script src='https://cdn.rawgit.com/mburakerman/prognroll/master/src/prognroll.js'></script><script  src="js/script.js"></script>
+</body>
+</html>
