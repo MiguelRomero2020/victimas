@@ -485,6 +485,36 @@ nav ul li a:hover {
         }
 */
 
+
+/* abajo arriba*/
+
+.arrow {
+  position: fixed;
+  left: 97%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  background: linear-gradient(90deg, rgba(248, 153, 28, 1) 0%, rgba(39, 55, 134, 1) 30%, rgba(237, 28, 36, 1) 52%, rgba(50, 173, 74, 1) 74%, rgba(144, 47, 146, 1) 92%);
+  color: white;
+  padding: 10px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.arrow.up {
+  top: 80px;
+}
+
+.arrow.down {
+  bottom: 20px;
+}
+
  /* barra social*/
 
 
