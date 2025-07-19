@@ -438,7 +438,6 @@ Su gobierno ha sido crítico de los grandes intereses económicos y busca un enf
 		
     </div>
 
-
 	
 	<br/><br/><br/><br/><br/><br/>
 <div class="custom-hr" aria-label="Separador con imagen en medio">
@@ -640,195 +639,14 @@ Su gobierno ha sido crítico de los grandes intereses económicos y busca un enf
         </div>
     </footer>
 
-
-	
-    <script>
-        // Elementos del DOM
-        const scrollUpBtn = document.querySelector('.scroll-up');
-        const scrollDownBtn = document.querySelector('.scroll-down');
-        const progressRing = document.querySelector('.progress-ring');
-        const sections = document.querySelectorAll('.section');
-
-        // Variables de control
-        let isScrolling = false;
-        let scrollTimeout;
-
-        // Función para scroll suave
-        function smoothScrollTo(target, duration = 800) {
-            const start = window.pageYOffset;
-            const distance = target - start;
-            const startTime = performance.now();
-
-            function animation(currentTime) {
-                const elapsed = currentTime - startTime;
-                const progress = Math.min(elapsed / duration, 1);
-                
-                // Función de easing suave
-                const easeOutCubic = 1 - Math.pow(1 - progress, 3);
-                
-                window.scrollTo(0, start + distance * easeOutCubic);
-                
-                if (progress < 1) {
-                    requestAnimationFrame(animation);
-                } else {
-                    isScrolling = false;
-                }
-            }
-            
-            isScrolling = true;
-            requestAnimationFrame(animation);
-        }
-
-        // Función ir arriba
-        function scrollToTop() {
-            if (!isScrolling) {
-                scrollUpBtn.classList.add('pulse');
-                smoothScrollTo(0);
-                
-                setTimeout(() => {
-                    scrollUpBtn.classList.remove('pulse');
-                }, 600);
-            }
-        }
-
-        // Función ir abajo
-        function scrollToBottom() {
-            if (!isScrolling) {
-                scrollDownBtn.classList.add('pulse');
-                const documentHeight = document.documentElement.scrollHeight;
-                const windowHeight = window.innerHeight;
-                smoothScrollTo(documentHeight - windowHeight);
-                
-                setTimeout(() => {
-                    scrollDownBtn.classList.remove('pulse');
-                }, 600);
-            }
-        }
-
-        // Función para ir a la siguiente sección
-        function scrollToNextSection() {
-            const currentScroll = window.pageYOffset;
-            const windowHeight = window.innerHeight;
-            
-            for (let i = 0; i < sections.length; i++) {
-                const sectionTop = sections[i].offsetTop;
-                
-                if (sectionTop > currentScroll + 50) {
-                    smoothScrollTo(sectionTop);
-                    return;
-                }
-            }
-            
-            // Si no hay más secciones, ir abajo del todo
-            scrollToBottom();
-        }
-
-        // Actualizar visibilidad de botones
-        function updateButtonVisibility() {
-            const scrollTop = window.pageYOffset;
-            const documentHeight = document.documentElement.scrollHeight;
-            const windowHeight = window.innerHeight;
-            const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
-
-            // Actualizar progreso circular
-            if (progressRing) {
-                progressRing.style.setProperty('--progress', `${scrollPercent * 3.6}deg`);
-            }
-
-            // Mostrar botón arriba después de 300px
-            if (scrollTop > 300) {
-                scrollUpBtn.classList.add('visible');
-            } else {
-                scrollUpBtn.classList.remove('visible');
-            }
-
-            // Ocultar botón abajo cerca del final
-            if (scrollTop >= documentHeight - windowHeight - 100) {
-                scrollDownBtn.classList.add('hidden');
-            } else {
-                scrollDownBtn.classList.remove('hidden');
-            }
-        }
-
-        // Event listeners
-        scrollUpBtn.addEventListener('click', scrollToTop);
-        scrollDownBtn.addEventListener('click', scrollToNextSection);
-
-        // Optimizar scroll con throttling
-        function throttle(func, limit) {
-            let inThrottle;
-            return function() {
-                const args = arguments;
-                const context = this;
-                if (!inThrottle) {
-                    func.apply(context, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            }
-        }
-
-        // Listener de scroll optimizado
-        window.addEventListener('scroll', throttle(updateButtonVisibility, 16));
-
-        // Atajos de teclado
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Home' && e.ctrlKey) {
-                e.preventDefault();
-                scrollToTop();
-            } else if (e.key === 'End' && e.ctrlKey) {
-                e.preventDefault();
-                scrollToBottom();
-            } else if (e.key === 'ArrowUp' && e.ctrlKey) {
-                e.preventDefault();
-                scrollToTop();
-            } else if (e.key === 'ArrowDown' && e.ctrlKey) {
-                e.preventDefault();
-                scrollToNextSection();
-            }
-        });
-
-        // Inicializar
-        updateButtonVisibility();
-
-        // Soporte para gestos táctiles en móvil
-        let touchStartY = 0;
-        let touchEndY = 0;
-
-        document.addEventListener('touchstart', e => {
-            touchStartY = e.changedTouches[0].screenY;
-        });
-
-        document.addEventListener('touchend', e => {
-            touchEndY = e.changedTouches[0].screenY;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            const swipeThreshold = 50;
-            const diff = touchStartY - touchEndY;
-            
-            if (Math.abs(diff) > swipeThreshold) {
-                if (diff > 0) {
-                    // Swipe up - próxima sección
-                    scrollToNextSection();
-                } else {
-                    // Swipe down - sección anterior o arriba
-                    scrollToTop();
-                }
-            }
-        }
-
-        // Observador de intersección para efectos adicionales
-		
+	 <script>
+        // Función para observar elementos y activar animaciones
         const observerOptions = {
-            threshold: 0.3,
-            rootMargin: '0px 0px -20% 0px'
+            threshold: 0.2,
+            rootMargin: '0px 0px -50px 0px'
         };
-		
-		
-		
-		  const observer = new IntersectionObserver((entries) => {
+
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
@@ -849,30 +667,94 @@ Su gobierno ha sido crítico de los grandes intereses económicos y busca un enf
         document.querySelectorAll('.timeline-item').forEach(item => {
             observer.observe(item);
         });
-		
-		
 
-        const sectionObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observar todas las secciones
-        sections.forEach(section => {
-            sectionObserver.observe(section);
+        // Mostrar/ocultar indicador de scroll
+        const scrollIndicator = document.querySelector('.scroll-indicator');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollIndicator.classList.add('show');
+            } else {
+                scrollIndicator.classList.remove('show');
+            }
         });
 
-        // Prevenir comportamiento por defecto en algunos navegadores
-        window.addEventListener('beforeunload', () => {
-            window.scrollTo(0, 0);
+        // Función para scroll suave hacia arriba
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Animación de la línea principal del timeline
+        function animateTimelineLine() {
+            const timeline = document.querySelector('.timeline');
+            const timelineRect = timeline.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            if (timelineRect.top < windowHeight && timelineRect.bottom > 0) {
+                const scrollProgress = Math.min(
+                    Math.max((windowHeight - timelineRect.top) / (windowHeight + timelineRect.height), 0),
+                    1
+                );
+                
+                timeline.style.setProperty('--line-progress', scrollProgress);
+            }
+        }
+
+        // Añadir animación CSS para la línea
+        const style = document.createElement('style');
+        style.textContent = `
+            .timeline::before {
+                transform: translateX(-50%) scaleY(var(--line-progress, 0));
+                transform-origin: top;
+                transition: transform 0.3s ease;
+            }
+            
+            @keyframes fadeInUp {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            
+            .timeline-content:hover .timeline-badge {
+                transform: scale(1.05);
+                transition: transform 0.2s ease;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Event listener para la animación de la línea
+        window.addEventListener('scroll', animateTimelineLine);
+        window.addEventListener('resize', animateTimelineLine);
+
+        // Inicializar la animación de la línea
+        animateTimelineLine();
+
+        // Efecto de parallax sutil en el fondo
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = scrolled * 0.5;
+            document.body.style.backgroundPosition = `center ${parallax}px`;
+        });
+
+        // Añadir efecto de hover mejorado
+        document.querySelectorAll('.timeline-content').forEach(content => {
+            content.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            content.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
         });
     </script>
-	
-	
 	<div class="arrow up" onclick="scrollUp()">&#8679;</div>
 
   <div class="arrow down" onclick="scrollDown()">&#8681;</div>
